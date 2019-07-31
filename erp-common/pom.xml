@@ -9,18 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>erp-config</artifactId>
+    <artifactId>erp-common</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>erp-common-base</module>
+        <module>erp-common-util</module>
+        <module>erp-common-core</module>
+        <module>erp-common-core</module>
+    </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

@@ -7,6 +7,8 @@
         <module>erp-register</module>
         <module>erp-config</module>
         <module>erp-getway</module>
+        <module>erp-sys</module>
+        <module>erp-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,6 +25,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <mysql.version>8.0.16</mysql.version>
     </properties>
 
 
@@ -40,14 +43,10 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
                 <scope>runtime</scope>
             </dependency>
 
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <optional>true</optional>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
